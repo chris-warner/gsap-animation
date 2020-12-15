@@ -33,7 +33,8 @@
 			width: inherit;
 			height: inherit;
 			top: 0px;
-			left: 0px
+			left: 0px;
+			background-repeat: repeat-x;
 		}
 
 		#myAd #myAd_photo {
@@ -130,8 +131,9 @@
 			.from('#myAd_surfboard', 1.3, { top: 230, rotation: -130, left: 300, ease: "Back.easeOut" },'cta');
 
 			//tl1.seek('cta');
-			var tl2 = new TimelineLite();
-			tl2.to('#myAd_clouds',30, { backgroundPositionX: 649 })
+			//repeat:-1 keeps animation repeating
+			var tl2 = new TimelineLite({repeat:-1});
+			tl2.to('#myAd_clouds', 65, { backgroundPositionX: 649, ease: "Power0.easeOut" })
 
 		}());
 
