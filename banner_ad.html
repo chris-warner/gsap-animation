@@ -122,7 +122,9 @@
 			
 			// tl1.from('#myAd_txt2', 1.3, { top:-100, ease:Power2.easeOut}).from('#myAd_txt1', 1.3, { top:100, ease:Power2.easeIn})
 			// .to('#myAd_txt1', 1.3, { top:210, ease:Power2.easeOut });
-			tl1.fromTo('#myAd_txt1', {top:-100}, {top:100, east:Power2.easeIn}).fromTo('#myAd_txt1', {top:-100}, {top:100, east:Power2.easeIn})
+			tl1.from('#myAd_txt2', 1.3, { top: -100, ease: "power2.out"})
+			.to('#myAd_txt1', 1.3, {top: 210, ease: "power2.out"});
+
 		}());
 
 	</script>
